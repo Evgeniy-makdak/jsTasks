@@ -1,9 +1,9 @@
 console.log("Уровень 1.3 задачника code.me");
 // Дана строка. Если в этой строке более одного символа, выведите в консоль предпоследний символ этой строки.
-const isStringToPreLastSymbol = "предпоследний символ";
-isStringToPreLastSymbol.length > 1
+const StringToPreLastSymbol = "предпоследний символ";
+StringToPreLastSymbol.length > 1
   ? console.log(
-      `Предпоследний символ строки ${isStringToPreLastSymbol}: ${isStringToPreLastSymbol.at(
+      `Предпоследний символ строки ${StringToPreLastSymbol}: ${StringToPreLastSymbol.at(
         -2
       )}`
     )

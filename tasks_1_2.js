@@ -1,40 +1,40 @@
 console.log("Уровень 1.2 задачника code.me");
 // Дано число. Выведите в консоль первую цифру этого числа.
-const isNumberForFirstDigit = 371875;
+const NumberForFirstDigit = 371875;
 console.log(
-  `Первая цифра числа ${isNumberForFirstDigit}: ${Number(
-    String(isNumberForFirstDigit)[0]
+  `Первая цифра числа ${NumberForFirstDigit}: ${Number(
+    String(NumberForFirstDigit)[0]
   )}`
 );
 console.log(
-  `Первая цифра числа ${isNumberForFirstDigit}: ${+[
-    ...`${isNumberForFirstDigit}`,
+  `Первая цифра числа ${NumberForFirstDigit}: ${+[
+    ...`${NumberForFirstDigit}`,
   ][0]}`
 );
 // Дано число. Выведите в консоль последнюю цифру этого числа.
-const isNumberForLastDigit = 371875;
+const NumberForLastDigit = 371875;
 console.log(
-  `Последняя цифра числа ${isNumberForLastDigit}: ${Number(
-    String(isNumberForLastDigit)[isNumberForLastDigit.toString().length - 1]
+  `Последняя цифра числа ${NumberForLastDigit}: ${Number(
+    String(NumberForLastDigit)[NumberForLastDigit.toString().length - 1]
   )}`
 );
 console.log(
-  `Последняя цифра числа ${isNumberForLastDigit}: ${+[
-    ...`${isNumberForLastDigit}`,
-  ][isNumberForLastDigit.toString().length - 1]}`
+  `Последняя цифра числа ${NumberForLastDigit}: ${+[
+    ...`${NumberForLastDigit}`,
+  ][NumberForLastDigit.toString().length - 1]}`
 );
 // Дано число. Выведите в консоль сумму первой и последней цифры этого числа.
-const isNumberToSumm = 77523;
+const NumberToSumm = 77523;
 console.log(
-  `Сумма первой и последней цифры числа ${isNumberToSumm} равна ${(summDigits =
-    +[...`${isNumberToSumm}`][0] +
-    +[...`${isNumberToSumm}`][isNumberToSumm.toString().length - 1])}`
+  `Сумма первой и последней цифры числа ${NumberToSumm} равна ${(summDigits =
+    +[...`${NumberToSumm}`][0] +
+    +[...`${NumberToSumm}`][NumberToSumm.toString().length - 1])}`
 );
 // Дано число. Выведите количество цифр в этом числе.
-const isLengthOfNumber = 513280;
+const LengthOfNumber = 513280;
 console.log(
-  `Количество цифр в числе ${isLengthOfNumber} равно ${
-    isLengthOfNumber.toString().length
+  `Количество цифр в числе ${LengthOfNumber} равно ${
+    LengthOfNumber.toString().length
   }`
 );
 // Даны два числа. Проверьте, что первые цифры этих чисел совпадают.

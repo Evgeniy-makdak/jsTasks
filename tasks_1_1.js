@@ -1,7 +1,7 @@
 console.log("Уровень 1.1 задачника code.me");
 // Дано число. Проверьте, отрицательное оно или нет. Выведите об этом информацию в консоль.
-const isNegativeNumber = -7;
-isNegativeNumber <= 0
+const NegativeNumber = -7;
+NegativeNumber <= 0
   ? console.log("Число отрицательное либо нулевое")
   : console.log("Число положительное");
 // Дана строка. Выведите в консоль длину этой строки.
@@ -24,15 +24,15 @@ firstWord[firstWord.length - 1] === secondWord[secondWord.length - 1]
   ? console.log(`последние буквы слов ${firstWord} и ${secondWord} идентичны`)
   : console.log(`последние буквы слов ${firstWord} и ${secondWord} отличаются`);
 // Дано слово. Получите его последнюю букву. Если слово заканчивается на мягкий знак, то получите предпоследнюю букву.
-const isLastLetter = "бутылка";
-isLastLetter[isLastLetter.length - 1] !== "ь"
+const LastLetter = "бутылка";
+LastLetter[LastLetter.length - 1] !== "ь"
   ? console.log(
-      `последняя буква в слове ${isLastLetter}: ${
-        isLastLetter[isLastLetter.length - 1]
+      `последняя буква в слове ${LastLetter}: ${
+        LastLetter[LastLetter.length - 1]
       }`
     )
   : console.log(
-      `предпоследняя буква в слове ${isLastLetter}: ${
-        isLastLetter[isLastLetter.length - 2]
+      `предпоследняя буква в слове ${LastLetter}: ${
+        LastLetter[LastLetter.length - 2]
       }`
     );
