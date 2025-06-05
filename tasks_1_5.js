@@ -21,3 +21,11 @@ for (let i = 1; i <= 100; i += 2) {
 console.log(
   `Сумма целых нечётных чисел от 1 до 100: ${SumOfOddNumbersFromOneToHundred}`
 );
+// Даны два целых числа. Найдите остаток от деления первого числа на второе.
+const divident = 73;
+const divisor = 37;
+const remainderOfDivision = divident % divisor;
+console.log(`Остаток от деления числа ${divident} на ${divisor} составляет ${remainderOfDivision}`);
+// Дана некоторая строка. Переберите и выведите в консоль по очереди все символы с конца строки.
+const slowString = 'обычная строка';
+console.log(slowString.split('').reverse().join(''));
