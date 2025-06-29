@@ -14,11 +14,19 @@ const defaultNumber = "12345";
 console.log(defaultNumber.toString().split("").reverse().toString());
 console.log([...defaultNumber].reverse().toString());
 console.log(
-  "Дано некоторое число: 12345. Выведите в консоль все его символы с конца."
-);
-console.log(
-  "Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]. По очереди выведите в консоль подмассивы из двух элементов нашего массива:" 
-// [1, 2]
-// [3, 4]
-// [5, 6]
+ ` Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]. По очереди выведите в консоль подмассивы из двух элементов нашего массива: `
 )
+console.log("[1, 2]");
+console.log("[3, 4]");
+console.log("[5, 6]");
+const defaultArray = [1, 2, 3, 4, 5, 6];
+let doubleArray = [];
+
+for (let i = 0; i < defaultArray.length; i++) {
+  doubleArray.push(defaultArray[i]);
+  
+  if (doubleArray.length === 2 || i === defaultArray.length - 1) {
+    console.log(doubleArray);
+    doubleArray = [];
+  }
+}
