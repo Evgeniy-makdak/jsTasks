@@ -30,3 +30,11 @@ for (let i = 0; i < defaultArray.length; i++) {
     doubleArray = [];
   }
 }
+console.log("Даны два массива: ");
+console.log("let arr1 = [1, 2, 3]");
+console.log("let arr2 = [4, 5, 6]");
+console.log("Слейте эти массивы в новый массив: ");
+console.log("[1, 2, 3, 4, 5, 6]");
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+console.log(new Array(...arr1, ...arr2));
