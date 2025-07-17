@@ -24,4 +24,23 @@ console.log("*******************************************************************
 console.log("Даны числа, разделенные запятыми:");
 console.log("12,34,56");
 console.log("Найдите сумму этих чисел.");
-const stringOfNumbers = "12, 34, 56";
+const stringOfNumbers = "12,34,56";
+const summerOfStringOfNumbers = (stringOfNumbers.split(",").reduce((acc, x) => {
+    return +acc + +x}, 0))
+console.log(summerOfStringOfNumbers)
+console.log("**************************************************************************************************")
+console.log("Дана дата в следующем формате:");
+console.log('2025-12-31');
+console.log("Преобразуйте эту дату в следующий объект:");
+console.log("{");
+console.log("year: '2025',");
+console.log("month: '12',");
+console.log("day: '31',");
+console.log("}");
+const data = '2025-12-31';
+const objectData = {};
+const dataArrey = data.split("-");
+objectData.year = dataArrey[0];
+objectData.month = dataArrey[1];
+objectData.day = dataArrey[2];
+console.log(objectData);
