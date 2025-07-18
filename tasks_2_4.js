@@ -37,3 +37,32 @@ const randomNumber = 5237118;
 const evenNumbersCount = randomNumber.toString().split('').filter((numb) => numb % 2 === 0).length;
 console.log(`Количество чётных цифр в числе ${randomNumber} равно ${evenNumbersCount}`);
 console.log("**************************************************************************************************")
+const daysObject = {};
+daysObject[1] = "Sunday";
+daysObject[2] = "Monday";
+daysObject[3] = "Tuesday";
+daysObject[4] = "Wednesday";
+daysObject[5] = "Thursday";
+daysObject[6] = "Friday";
+daysObject[7] = "Saturday";
+console.log(daysObject);
+console.log("**************************************************************************************************")
+console.log("Дана некоторая строка:")
+console.log("abcde")
+console.log("Переведите в верхний регистр все нечетные буквы этой строки. В нашем случае должно получится следующее:")
+console.log("AbCdE")
+const defaultStringSmallLetters = "abcde";
+const resultString = []
+for (let i = 0; i < defaultStringSmallLetters.length; i++) {
+    if (i % 2 !== 0) {
+        resultString.push(defaultStringSmallLetters[i])
+    } else {
+        resultString.push(defaultStringSmallLetters[i].toUpperCase())
+    }
+}
+console.log(`Результат задачи: ${resultString.join('')}`);
+console.log("**************************************************************************************************")
+console.log("Дана некоторая строка со словами:")
+console.log("aaa bbb ccc")
+console.log("Сделайте заглавным первый символ каждого слова в этой строке. В нашем случае должно получится следующее:")
+console.log("Aaa Bbb Ccc")
