@@ -1,4 +1,4 @@
-console.log("Уровень 2.3 задачника code.me");
+console.log("Уровень 2.4 задачника code.me");
 console.log("Дана некоторая строка с буквами и цифрами. Получите позицию первой цифры в этой строке.");
 const randomString = "Ba3r7baRoss*1"
 let codeOfFirstNumber = -1
@@ -65,4 +65,11 @@ console.log("*******************************************************************
 console.log("Дана некоторая строка со словами:")
 console.log("aaa bbb ccc")
 console.log("Сделайте заглавным первый символ каждого слова в этой строке. В нашем случае должно получится следующее:")
-console.log("Aaa Bbb Ccc")
+console.log("Aaa Bbb Ccc");
+const stringToLowerCase = "aaa bbb ccc";
+const arreyFromStringToLowerCase = stringToLowerCase.split(" ");
+const firstUpperLetter = [];
+for (let i = 0; i < arreyFromStringToLowerCase.length ; i++) {
+    firstUpperLetter.push((arreyFromStringToLowerCase[i][0].toLocaleUpperCase() + arreyFromStringToLowerCase[i].slice(1, arreyFromStringToLowerCase.length)))
+}
+console.log(firstUpperLetter.join(" "));
