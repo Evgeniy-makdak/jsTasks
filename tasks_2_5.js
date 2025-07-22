@@ -39,6 +39,9 @@ const stringWithoutAllLettersByFilter = [...defaultStringWithAllLetters].filter(
 console.log(stringWithoutAllLettersByFilter.join(""))
 console.log("**************************************************************************************************")
 console.log("Дан некоторый массив, например, вот такой:");
-console.log("[1, 2, 3, 4, 5, 6]");
+console.log("[1, 2, 3, 4, 5, 7]");
 console.log("Поделите сумму элементов, стоящих на четных позициях, на сумму элементов, стоящих на нечетных позициях.");
 const defaultArreyTodivision = [1, 2, 3, 4, 5, 6];
+const evenArray = (defaultArreyTodivision.filter(item => item % 2 === 0)).reduce((acc, el) => +acc + +el);
+const oddArray = (defaultArreyTodivision.filter(item => item % 2 !== 0)).reduce((acc, el) => +acc + +el);
+console.log(oddArray / evenArray);
