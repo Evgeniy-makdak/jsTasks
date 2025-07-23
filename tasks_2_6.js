@@ -24,4 +24,16 @@ console.log("*******************************************************************
 console.log("Дана некоторая строка с числом:")
 console.log("1234567")
 console.log("Отделите тройки цифр пробелами, начиная с конца числа. В нашем случае должно получится следующее:")
-console.log("1 234 567")
+console.log("1 234 567");
+const numbersString = "1234567";
+let numbersStringWithDeviders = [];
+let count = 0;
+for (let i = numbersString.length - 1; i >= 0; i--) {
+    numbersStringWithDeviders.push(numbersString[i]);
+    count++;
+    if (count === 3 && i !== 0) {
+        numbersStringWithDeviders.push(" ");
+        count = 0;
+    }
+}
+console.log(numbersStringWithDeviders.reverse().join(""));
