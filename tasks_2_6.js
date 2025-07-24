@@ -37,3 +37,32 @@ for (let i = numbersString.length - 1; i >= 0; i--) {
     }
 }
 console.log(numbersStringWithDeviders.reverse().join(""));
+console.log("**************************************************************************************************")
+console.log("Дана некоторая строка:")
+console.log("AbCdE")
+console.log("Смените регистр букв этой строки на противоположный. В нашем случае должно получится следующее:")
+console.log("aBcDe");
+const randomStringAnotherRegisterLetters = "AbCdE";
+const reverceRegisterLettersString = [];
+[...randomStringAnotherRegisterLetters].forEach((letter) => {
+    if (letter !== letter.toLowerCase()) {
+        reverceRegisterLettersString.push(letter.toLowerCase())
+    } else if (letter !== letter.toUpperCase()) {
+        reverceRegisterLettersString.push(letter.toUpperCase())
+    }
+});
+console.log(reverceRegisterLettersString.join(""));
+console.log("**************************************************************************************************")
+console.log("Дан некоторый массив с числами, например, вот такой:")
+console.log("[1, 2, 3, 4, 5, 6]")
+console.log("Слейте пары элементов вместе:")
+console.log("[12, 34, 56]");
+let singleArray = [1, 2, 3, 4, 5, 6];
+let pairArray = [];
+for (let i = 0; i < singleArray.length; i += 2) {
+    let firstNumber = singleArray[i]
+    let secondNumber = singleArray[i + 1]
+    let mergeArray = parseInt(`${firstNumber}${secondNumber}`)
+    pairArray.push(mergeArray)
+}
+console.log(pairArray);
