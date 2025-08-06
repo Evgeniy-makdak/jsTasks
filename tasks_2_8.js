@@ -25,3 +25,7 @@ console.log("let arr1 = [1, 2, 3];");
 console.log("let arr2 = ['a', 'b', 'c'];");
 console.log("Слейте эти массивы в новый массив следующим образом:");
 console.log("[1, 2, 'a', 'b', 'c', 3]");
+const arr1_2_8 = [1, 2, 3];
+const arr2_2_8 = ['a', 'b', 'c'];
+const resumeArray2_8 = (arr1_2_8.slice(0, 2).concat(arr2_2_8)).concat(arr1_2_8[arr1_2_8.length - 1]);
+console.log(resumeArray2_8);
