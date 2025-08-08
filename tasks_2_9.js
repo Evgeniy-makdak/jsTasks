@@ -12,3 +12,11 @@ for (let i = 0; i < defaultMumber2_9String.length; i += 2) {
 }
 const summerOfResult = resultPairSumm.map((el) => +el)
 console.log(summerOfResult.reduce((acc, num) => acc + num));
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Дан массив с числами:");
+console.log("[1, 2, 3, 4, 5]");
+console.log("Выведите в консоль элементы этого массива в обратном порядке.");
+const defaultArrayr2_9 = [1, 2, 3, 4, 5];
+console.log(defaultArrayr2_9.reverse().toString());
