@@ -30,4 +30,39 @@ const zeroString3_2_2 = [];
 for (let i = 1; i <= +number3_2_3; i++) {
     zeroString3_2_2.push(0)
 }
-console.log((zeroString3_2_2).join(""))
+console.log((zeroString3_2_2).join(""));
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Дана массив:");
+console.log("[");
+console.log("[1, 2, 3],");
+console.log("[4, 5, 6],");
+console.log("[7, 8, 9],");
+console.log("Найдите сумму элементов этого массива.");
+const array3_2_4 = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9],
+];
+const sunnerOfArray3_2_4 = array3_2_4.map((arr) => arr.reduce((acc, el) => {
+    return (+acc + +el)
+}));
+console.log(sunnerOfArray3_2_4.reduce((acc, elem) => {
+    return +acc + +elem
+}));
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Дана некоторая строка со словами:");
+console.log("aaa bbb ccc eee fff");
+console.log("Удалите из этой строки каждое второе слово. В нашем случае должно получится следующее:");
+console.log("aaa ccc fff");
+const string3_2_5 = "aaa bbb ccc eee fff";
+const mutateString3_2_5 = [];
+for (let i = 0; i < string3_2_5.split(" ").length; i++) {
+    if (i % 2 === 0) {
+        mutateString3_2_5.push(string3_2_5.split(" ")[i])
+    }
+};
+console.log(mutateString3_2_5.join(" "))
