@@ -22,3 +22,60 @@ console.log(
 console.log("Дано некоторое слово:");
 console.log("abcba");
 console.log("Проверьте, что это слово читается одинаково с любой стороны.");
+const word3_3_3 = "abcba";
+if (word3_3_3 === [...word3_3_3].reverse().join("")) {
+    console.log(`Строка ${word3_3_3} является анаграммой!`)
+} else {
+    console.log(`Строка ${word3_3_3} не анаграмма!`)
+}
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Дан массив:");
+console.log("[");
+console.log(" [");
+console.log("  [11, 12, 13],");
+console.log("  [14, 15, 16],");
+console.log("  [17, 18, 19],");
+console.log(" ]");
+console.log("[");
+console.log(" [");
+console.log("  [20, 21, 22],");
+console.log("  [23, 24, 25],");
+console.log("  [26, 27, 28],");
+console.log(" ]");
+console.log(" [");
+console.log("  [29, 30, 31],");
+console.log("  [32, 33, 34],");
+console.log("  [35, 36, 37],");
+console.log(" ]");
+console.log("]");
+console.log("Найдите сумму элементов этого массива.");
+const array3_3_4 = [
+	[
+		[11, 12, 13],
+		[14, 15, 16],
+		[17, 17, 19],
+	],
+	[
+		[21, 22, 23],
+		[24, 25, 26],
+		[27, 27, 29],
+	],
+	[
+		[31, 32, 33],
+		[34, 35, 36],
+		[37, 37, 39],
+	],
+];
+let arrSumFirst = [];
+for (let i = 0; i < array3_3_4.length; i++) {
+    arrSumFirst.push(array3_3_4[i].map((arrFirstLabel) => arrFirstLabel.reduce((acc, el) => {
+        return +acc + +el;
+    })));
+}
+console.log((arrSumFirst.map((arr) => arr.reduce((acc, elem) => {
+    return +acc + +elem;
+}))).reduce((acc, el) => {
+    return +acc + +el;
+}));
