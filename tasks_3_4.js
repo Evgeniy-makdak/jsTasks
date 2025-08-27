@@ -58,4 +58,9 @@ const obj3_4_3 = {
 		2: 25,
 		3: 26,
 	},
-}
+};
+console.log(Object.values(obj3_4_3).map((arr) => Object.values(arr)).map((el) => el.reduce((acc, e) => {
+	return +acc + +e;
+})).reduce((acc, el) => {
+	return +acc + +el
+}));
