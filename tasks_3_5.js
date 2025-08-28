@@ -13,3 +13,14 @@ console.log(
     "**************************************************************************************************"
 );
 console.log("Дан массив с числами. Оставьте в нем только те числа, которые содержат цифру ноль.");
+const numbersArray3_5_3 = [82, 12, 305, 0.3, 70, 5];
+const numbersArrayZeros3_5_3 = numbersArray3_5_3.filter((el) => el.toString().includes("0"));
+console.log(numbersArrayZeros3_5_3);
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Дан массив со числами. Проверьте, что в нем есть число, содержащее в себе цифру 3.");
+const numbersArrayThree3_5_4 = numbersArray3_5_3.filter((el) => el.toString().includes("3"));
+if (numbersArrayThree3_5_4.length) {
+    console.log(`В массиве ${numbersArray3_5_3} есть числа, содержащие цифру 3 - это ${numbersArrayThree3_5_4.join(" ")}`);
+}
