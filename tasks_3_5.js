@@ -24,3 +24,22 @@ const numbersArrayThree3_5_4 = numbersArray3_5_3.filter((el) => el.toString().in
 if (numbersArrayThree3_5_4.length) {
     console.log(`В массиве ${numbersArray3_5_3} есть числа, содержащие цифру 3 - это ${numbersArrayThree3_5_4.join(" ")}`);
 }
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Дано некоторое число:");
+console.log("35142");
+console.log("Отсортируйте цифры этого числа по возрастанию. В нашем случае должно получится следующее:");
+console.log("12345");
+const defaultNumber3_5_3 = 35142;
+console.log([...defaultNumber3_5_3.toString()].sort((a, b) => a - b).join(""));
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Напишите программу, которая сформирует следующую строку:");
+console.log("-1-2-3-4-5-");
+const stringWithDefice = [];
+for (let i = 1; i <= 5; i++) {
+    stringWithDefice.push("-", i);
+};
+console.log(stringWithDefice.join("") + "-");
