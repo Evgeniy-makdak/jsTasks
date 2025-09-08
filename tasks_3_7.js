@@ -83,3 +83,19 @@ console.log(
     "**************************************************************************************************"
 );
 console.log("№7 Дана строка. Удалите из нее все гласные буквы.");
+const string3_7_7 = "sUffix";
+const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+const noVowelString3_7_7 = [];
+for (let i = 0; i < [...string3_7_7].length; i++) {
+        if (!vowels.includes([...string3_7_7][i].toLowerCase())) {
+            noVowelString3_7_7.push([...string3_7_7][i])
+        }
+}
+console.log(noVowelString3_7_7.join(""));
+console.log(
+    "**************************************************************************************************"
+);
+console.log("№8 Дана строка. Сделайте заглавной последнюю букву каждого слова в этой строке.");
+const string3_7_8 = "There is the bigger sentance of this tasks";
+const string3_7_8ToBigLastLetter = string3_7_8.split(" ").map((letter) => letter.slice(0, letter.length - 1) + letter[letter.length - 1].toUpperCase());
+console.log(string3_7_8ToBigLastLetter.join(" "));
