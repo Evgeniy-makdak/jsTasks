@@ -99,3 +99,51 @@ console.log("№8 Дана строка. Сделайте заглавной п�
 const string3_7_8 = "There is the bigger sentance of this tasks";
 const string3_7_8ToBigLastLetter = string3_7_8.split(" ").map((letter) => letter.slice(0, letter.length - 1) + letter[letter.length - 1].toUpperCase());
 console.log(string3_7_8ToBigLastLetter.join(" "));
+console.log(
+    "**************************************************************************************************"
+);
+console.log("Дан следующая структура:");
+console.log("let data = [");
+console.log(" {");
+console.log("  1: [1, 2, 3],");
+console.log("  2: [1, 2, 3],");
+console.log("  3: [1, 2, 3],");
+console.log(" },");
+console.log(" 2: {");
+console.log("  1: [1, 2, 3],");
+console.log("  2: [1, 2, 3],");
+console.log("  3: [1, 2, 3],");
+console.log(" },");
+console.log(" 3: {");
+console.log("  1: [1, 2, 3],");
+console.log("  2: [1, 2, 3],");
+console.log("  3: [1, 2, 3],");
+console.log(" },");
+console.log("]");
+console.log("Найдите сумму элементов этой структуры.");
+let data3_7_8 = [
+	{
+		1: [1, 2, 3],
+		2: [1, 2, 3],
+		3: [1, 2, 3],
+	},
+	{
+		1: [1, 2, 3],
+		2: [1, 2, 3],
+		3: [1, 2, 3],
+	},
+	{
+		1: [1, 2, 3],
+		2: [1, 2, 3],
+		3: [1, 2, 3],
+	},
+];
+const summOfData3_7_8 = data3_7_8.map(obj => {
+    const result = {};
+    Object.keys(obj).forEach(key => {
+        result[key] = obj[key].reduce((sum, num) => sum + num, 0);
+    });
+    return result;
+});
+
+console.log(summOfData3_7_8);
