@@ -28,3 +28,31 @@ console.log("№3: Дана строка в формате:");
 console.log("snake_case");
 console.log("Преобразуйте ее в формат:");
 console.log("camelCase");
+const camelString3_8_3 = snakeString3_8_2.filter((el) => el !== "_");
+console.log("camel" + camelString3_8_3[1][0].toUpperCase() + camelString3_8_3[1].slice(camelString3_8_3.length - 1));
+console.log(
+    "**************************************************************************************************"
+);
+console.log("№5: Сформируйте с помощью циклов следующий массив:");
+console.log("[");
+console.log(" [1, 2, 3],");
+console.log(" [1, 2, 3],");
+console.log(" [1, 2, 3],");
+console.log(" [1, 2, 3],");
+console.log(" [1, 2, 3],");
+console.log("]");
+const resultArray3_8_5 = [];
+let underArray3_8_5 = [];
+while (resultArray3_8_5.length < 4) {
+    for (let i = 1; i <= 3; i++) {
+        underArray3_8_5.push(i);
+    }
+    resultArray3_8_5.push(underArray3_8_5);
+    underArray3_8_5 = [];
+}
+console.log('[');
+resultArray3_8_5.forEach((arr, index) => {
+    const comma = index < resultArray3_8_5.length - 1 ? ',' : '';
+    console.log(`  [${arr.join(', ')}]${comma}`);
+});
+console.log(']');
