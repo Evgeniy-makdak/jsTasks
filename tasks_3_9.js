@@ -2,16 +2,16 @@ console.log("Уровень 3.9 задачника code.me");
 console.log("№1: Дана строка. Проверьте, что эта строка состоит только из цифр.");
 const string3_9_1 = "531801";
 const isNumbersString3_9_1 = [...string3_9_1].filter((el) => +el % 1 === 0).join("");
-string3_9_1.length === isNumbersString3_9_1.length ? console.log(`Строка ${string3_9_1} полностью состоит из цифр`) : 
-console.log(`В строке ${string3_9_1} содержатся отличные от цифр символы.`);
+string3_9_1.length === isNumbersString3_9_1.length ? console.log(`Строка ${string3_9_1} полностью состоит из цифр`) :
+    console.log(`В строке ${string3_9_1} содержатся отличные от цифр символы.`);
 console.log(
     "**************************************************************************************************"
 );
 console.log("№2: Дана строка. Проверьте, что эта строка состоит только из четных цифр.");
 const string3_9_2 = "62418";
 const evenString3_9_2 = [...string3_9_2].filter((el) => +el % 2 === 0).join("");
-string3_9_2.length === evenString3_9_2.length ? console.log(`Строка ${string3_9_2} состоит из чётных чисел`) : 
-console.log(`В строке ${string3_9_2} есть нечётные числа.`);
+string3_9_2.length === evenString3_9_2.length ? console.log(`Строка ${string3_9_2} состоит из чётных чисел`) :
+    console.log(`В строке ${string3_9_2} есть нечётные числа.`);
 console.log(
     "**************************************************************************************************"
 );
@@ -45,3 +45,14 @@ console.log(summ13.join(" "));
 console.log(
     "**************************************************************************************************"
 );
+console.log("№5: Сформируйте с помощью циклов следующий массив:");
+console.log("[");
+console.log(" [1, 2, 3],");
+console.log(" [4, 5, 6],");
+console.log(" [7, 8, 9],");
+console.log("]");
+const bigArray3_9_5 = [];
+for (let i = 1; i <= 9; i += 3) {
+    bigArray3_9_5.push([i, i + 1, i + 2]);
+}
+console.log(bigArray3_9_5);
