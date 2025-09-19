@@ -36,10 +36,11 @@ console.log(
     "**************************************************************************************************"
 );
 console.log("№5: Дан массив со числами. Оставьте в нем числа, состоящие из разных цифр, а остальные удалите.");
-const array3_10_5 = [872, 277, 7, 11, 34, 651];
+const array3_10_5 = [872, 277, 7, 11, 34, 6551];
+const mutateArray3_10_5 = [];
 array3_10_5.forEach((el) => {
-    for (let i = 0; i < el.length; i++) {
-        
+    if (new Set([...el.toString()].join("")).size === [...el.toString()].length) {
+        mutateArray3_10_5.push(el)
     }
 })
-console.log(mutateArray3_10_5);
+console.log(`Из исходного массива ${array3_10_5} получили ${mutateArray3_10_5}`)
