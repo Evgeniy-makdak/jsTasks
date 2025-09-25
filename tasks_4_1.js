@@ -71,3 +71,15 @@ console.log(
     "**************************************************************************************************"
 );
 console.log("№5: Сделайте функцию, которая параметром будет принимать число, а возвращать сумму его делителей.");
+function deviders4_1_5(number){
+    const arrayDeviders = [];
+     for (let i = 1; i <= number; i++) {
+        if (number % i === 0) {
+            arrayDeviders.push(i);
+        }
+    }
+    
+    // Суммируем делители
+    return arrayDeviders.reduce((acc, num) => acc + num, 0);
+}
+console.log(deviders4_1_5(9))
