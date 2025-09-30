@@ -44,3 +44,14 @@ console.log(
     "**************************************************************************************************"
 );
 console.log("№5: Сделайте функцию, которая вернет массив всех високосных годов за предыдущие сто лет.");
+const dataNow = new Date().getFullYear();
+const lastLeapYears = () => {
+    const lastLeapYearsArray = [];
+    for (let i = dataNow - 100; i < dataNow; i++) {
+        if (i % 4 === 0 || (i % 100 !== 0 && i % 400 === 0)) {
+            lastLeapYearsArray.push(i);
+        };
+    };
+    return lastLeapYearsArray
+};
+console.log(lastLeapYears());
