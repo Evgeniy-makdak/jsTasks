@@ -59,3 +59,12 @@ console.log(
     "**************************************************************************************************"
 );
 console.log("№6: Сделайте функцию, которая будет возвращать сколько дней осталось до конца текущего месяца.");
+const date = new Date();
+const dateNow = new Date().getDate();
+const year = date.getFullYear();
+const month = date.getMonth();
+const daysInMonth = new Date(year, month + 1, 0).getDate();
+function howDaysToMonthEnd() {
+    return daysInMonth - dateNow;
+};
+console.log(howDaysToMonthEnd())
