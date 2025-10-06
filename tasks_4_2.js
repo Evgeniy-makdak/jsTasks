@@ -1,4 +1,4 @@
-console.log("Уровень 4.1 задачника code.me");
+console.log("Уровень 4.2 задачника code.me");
 console.log("№1: Сделайте функцию, которая параметром будет принимать число и возвращать сумму его цифр");
 const number4_2_1 = (number) => {
     return [...number.toString()].reduce((acc, el) => {
