@@ -37,3 +37,21 @@ function deleteDoubles() {
 };
 
 console.log(deleteDoubles());
+console.log(
+    "**************************************************************************************************"
+);
+console.log("№4: Сделайте функцию, которая параметром будет принимать массив с числами и возвращать максимальное и минимальное значение из этого массива в виде следующего объекта:");
+console.log("{");
+console.log(" max: 9,");
+console.log(" min: 1,");
+console.log("}");
+const array4_3_4 = [857, 11, 296, -5, 2, 0, 857.00001, -4.999999999999];
+const sortedArray4_3_4 = array4_3_4.toSorted((b, a) => a - b);
+const minMaxObject = (array) => {
+    const object4_3_4 = {
+        max: array[0],
+        min: array[array.length - 1]
+    }
+    return object4_3_4;
+}
+console.log(minMaxObject(sortedArray4_3_4))
