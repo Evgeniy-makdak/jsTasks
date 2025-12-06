@@ -14,3 +14,19 @@ devisionsOfNumber(8)
 console.log(
     "**************************************************************************************************"
 );
+
+console.log("#б/н: Сделайте функцию, которая будет выводить произвольное сообщение в консоль через 7 секунд.");
+
+function sleep(ms) {
+    return new Promise(resolve => 
+       setTimeout(resolve, ms)
+    )
+}
+
+async function time() {
+    console.log('отсчёт начался');
+    await sleep(7000);
+    console.log('прошло ровно 7 секунд');
+};
+
+time();
