@@ -30,3 +30,19 @@ async function time() {
 };
 
 time();
+console.log(
+    "**************************************************************************************************"
+);
+console.log("№2: Сделайте функцию, которая параметром будет принимать число, а возвращать массив его делителей.");
+
+function arrayDelivered(number) {
+    const array = [];
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            array.push(i);
+        }
+    }
+    console.log(`Число ${number} имеет делители: ${array}`)
+}
+
+arrayDelivered(8);
