@@ -56,3 +56,17 @@ console.log(evelNumbers(52388));
 console.log(
     "**************************************************************************************************"
 );
+console.log("№4: Сделайте функцию, которая заполнит массив N случайными числами из заданного промежутка.");
+function randomArray(n, x, y) {
+    const arrRand = [];
+    let i = 1;
+    while (i <= n) {
+        arrRand.push(Math.floor(Math.random() * (y - x) + x));
+        i++;
+    }
+    return arrRand;
+}
+console.log(randomArray(7, 2, 17));
+console.log(
+    "**************************************************************************************************"
+);
