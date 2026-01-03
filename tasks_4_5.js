@@ -41,3 +41,11 @@ twoMaxNumber([72, 16, 399, -517, 0, 777])
 console.log(
     "**************************************************************************************************"
 );
+console.log("№4Реализуйте функцию, которая по полному имени, состоящему из имени и фамилии, возвращает инициалы");
+
+function abbrevName(name) {
+  const [firstName, secondName] = name.split(" ");
+  return `${firstName[0]}.${secondName[0]}`
+}
+
+console.log(abbrevName("Mick Jagger"))
