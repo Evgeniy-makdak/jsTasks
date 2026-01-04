@@ -5,10 +5,11 @@ function reverseString(string) {
 }
 
 reverseString("maxcode.dev");
+// 30 секунд;
 console.log(
     "**************************************************************************************************"
 );
-console.log("№3 Панграмма");
+console.log("№3 Панграмма" );
 
 function isPangram(sentence) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -23,3 +24,54 @@ function isPangram(sentence) {
 }
 
 console.log(isPangram("The quick brown fox jumps over he lazy dog"));
+// Приблизительно 3 минуты;
+console.log(
+    "**************************************************************************************************"
+);
+console.log("№2 Top Words");
+
+const words = [
+  "a",
+  "able",
+  "about",
+  "absolute",
+  "accept",
+  "account",
+  "achieve",
+  "across",
+  "act",
+  "active",
+  "actual",
+  "add",
+  "address",
+  "Admit",
+  "Advertise",
+  "Affect",
+  "AFFORD",
+  "after",
+  "afternoon",
+  "again",
+  "against",
+  "age",
+  "agent",
+  "ago",
+  "agree",
+];
+function topWords(words, query, limit) {
+    const resWords = [];
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].toLowerCase().includes(query.toLowerCase()) && words[i][0].toLowerCase() === query[0].toLowerCase()) {
+            resWords.push(words[i]);
+        }
+    }
+    return resWords.splice(0, limit);
+};
+
+console.log(topWords(words, "Af", 3).join(","));
+console.log(topWords(words, "aga", 5).join(","));
+console.log(topWords(words, "b", 2).join(","));
+
+// Около 4 минут;
+console.log(
+    "**************************************************************************************************"
+);
